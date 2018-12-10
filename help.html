@@ -1,0 +1,33 @@
+---
+---
+
+<section class="help">
+  <div class="accordion" id="accordionHelp">
+    <div class="card">
+    {% assign help_sections = site.data.help_sections %}
+    {% for help_section_item in help_sections %}
+      <div class="card-header" id="heading{{ forloop.index }}">
+        <h5 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{{ forloop.index }}" aria-expanded="true" aria-controls="collapse{{ forloop.index }}">
+            {{ help_section_item.name }}
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapse{{ forloop.index }}" class="collapse {% if forloop.last == true %}{{ "collapse-item-last" }}{% endif %}" aria-labelledby="heading{{ forloop.index }}" data-parent="#accordionHelp">
+        <div class="card-body">
+          {% assign sorted_help_items = site.help | sort: 'weight' | reverse %}
+          {% for item in sorted_help_items %}
+            {% if help_section_item.name == item.help_section %}
+              <div class="help-item-row">
+                <a href="{{ site.baseurl }}{{ item.permalink }}">{{ item.title }}</a>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>

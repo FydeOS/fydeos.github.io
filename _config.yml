@@ -45,6 +45,8 @@ exclude:
 collections:
   faq:
     output: true
+  help:
+    output: true
 
 # jekyll-archives:
 #   enabled: ['categories']
@@ -72,9 +74,20 @@ defaults:
       layout: answer
   -
     scope:
+      path: ""
+      type: help
+    values:
+      layout: help
+  -
+    scope:
       path: "kb.html"
     values:
-      body_class: "show_hero_search"
+      body_class: "show_kb_search"
+  -
+    scope:
+      path: "help.html"
+    values:
+      body_class: "show_help_search"
 
 # -----------
 # CloudCannon
