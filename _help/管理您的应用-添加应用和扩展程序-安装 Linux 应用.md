@@ -25,7 +25,7 @@ permalink: /help/apps/install/linux
 如果遇到 Linux 或 Linux 应用方面的问题，请尝试按以下步骤操作：
 
 - 重启 FydeOS。
-- 检查虚拟机是否为最新版本。具体方法为：在浏览器中，转到`chrome://components`，在`cros-termina`下方，选择检查是否有更新。如果下载更新，则可能需要重启 FydeOS。
+- 检查虚拟机是否为最新版本。具体方法为：在浏览器中，转到`chrome://components`，在「cros-termina」下方，选择检查是否有更新。如果下载更新，则可能需要重启 FydeOS。
 - 更新软件包。具体方法为：打开终端，然后运行`sudo apt-get update && sudo apt-get dist-upgrade`。
 
 注意：你可能需要重启 FydeOS 才能让更改生效。Linux 会在完成初始设置后自动检查是否有新的软件包，并在运行过程中每 24 小时检查一次。
