@@ -38,8 +38,18 @@
   if (currentURL.indexOf("#") > -1)
   {
     var slug = currentURL.substr(currentURL.indexOf("#")+1);
-    var toUnCollapseTarget = document.querySelector("button[data-slug="+slug+"]").getAttribute('data-target');
+    var toUnCollapse = document.querySelector("button[data-slug="+slug+"]");
+    var toUnCollapseTarget = toUnCollapse.getAttribute('data-target');
     document.querySelector(toUnCollapseTarget).classList.add('show');
+
+    var sectionContainer = document.querySelector('section.content');
+    window.scrollTo({
+      left: 0,
+      top: toUnCollapse.offsetTop + document.querySelector('header').offsetHeight,
+      behavior: 'smooth'
+    });
+    console.log("scrolled to");
+    console.log(toUnCollapse.offsetTop + document.querySelector('header').offsetHeight);
   }
 
   //handles button click and append slug to URL

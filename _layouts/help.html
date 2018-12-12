@@ -2,6 +2,13 @@
 layout: default
 ---
 
+<nav aria-label="breadcrumb" id="nav-breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item first"><a href="">帮助文档</a></li>
+    <li class="breadcrumb-item second active" aria-current="page"></li>
+  </ol>
+</nav>
+
 <section class="tutorial">
   <section class="sidebar sticky">
     <ul id="sidebar_content_index">
@@ -31,27 +38,6 @@ layout: default
   </section>
 </section>
 
-{% if page.set %}
-  {% assign set_file_name = "_sets/" | append: page.set | append: ".md" %}
-  {% assign set = site.sets | where: "path", set_file_name | first %}
-  {% assign series_posts = site.posts | where: "set", page.set %}
-  <div class="tutorial-series">
-    <h3>{{ set.title }} - Series</h3>
-    <p>{{ set.description }}</p>
-
-    {% include listings.html listings=series_posts numbered=true%}
-  </div>
-{% endif %}
-{% assign related_posts = site.related_posts %}
-{% assign related_posts_size = related_posts | size %}
-{% if related_posts_size > 0 %}
-  <div class="related">
-    <h4>这些或许也能帮助到你：</h4>
-
-    {% include listings.html listings=site.related_posts %}
-  </div>
-{% endif %}
-
 
 <script src="{{ site.baseurl }}/js/main.js"></script>
 
@@ -69,28 +55,37 @@ layout: default
     //headings[i].appendChild(anchorLink);
   }
 
-  $(".modalOpen").click(function() {
-    var id = $(this).attr("href");
-    $(id).addClass("show");
+  //fill breadcrumb
+  var arrUrlPath =  window.location.pathname.split('/');
+  arrUrlPath.pop();
+  var strFirstNodeURL = "/" + arrUrlPath[1] + "/#" + arrUrlPath[2];
 
-    $(window).click(function() {
-      $(".show").removeClass("show");
-    });
+  console.log(arrUrlPath);
 
-    $(id + " > div").click(function(event){
-      event.stopPropagation();
-    });
-    return false;
-  });
+  document.querySelector("ol.breadcrumb li.first a").setAttribute("href", strFirstNodeURL);
+  var docTitle = document.querySelector("section.tutorial-content h1").innerText;
 
-  $(".close").click(function() {
-    $(".show").removeClass("show");
-    return false;
-  });
+  if (arrUrlPath.length <= 4)
+  {
+    document.querySelector("ol.breadcrumb li.second").innerText = docTitle;
+  }
+  else if (arrUrlPath.length == 5)
+  {
+    var strSecondNodeURL = "/help/" + arrUrlPath[2] + "/" + arrUrlPath[3] + "/";
+    var strSecondNodeText = "{{page.help_section | last}}"
+    var objSecondNode = document.querySelector("ol.breadcrumb li.second");
+    var objSecondLink = document.createElement("a");
+    objSecondLink.setAttribute("href", strSecondNodeURL);
+    objSecondLink.innerText = strSecondNodeText;
+    objSecondNode.classList.remove("active");
+    objSecondNode.append(objSecondLink);
 
-  $(document).keyup(function(e) {
-    if (e.keyCode == 27) {
-      $(".show").removeClass("show");
-    }
-  });
+    var objThirdNode = document.createElement("li");
+    objThirdNode.setAttribute("class", "breadcrumb-item third active");
+    objThirdNode.setAttribute("aria-current", "page");
+    var objBreadcrumbOl = document.querySelector("ol.breadcrumb");
+    objBreadcrumbOl.append(objThirdNode);
+    document.querySelector("ol.breadcrumb li.third").innerText = docTitle;
+  }
+
 </script>
