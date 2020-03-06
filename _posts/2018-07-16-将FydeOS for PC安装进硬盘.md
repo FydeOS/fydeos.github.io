@@ -1,14 +1,15 @@
 ---
 date: 2018-07-16
-title: 将 FydeOS for PC 安装进硬盘
+title: 将 FydeOS for PC 安装进硬盘（全盘安装）
 categories:
   - 起步走
 type: Document
 permalink: /getting-started/install-fydeos-to-hdd/
 redirect_from:
-  - /使用技巧/将FydeOS-for-PC安装进硬盘/
+  - /使用技巧/将FydeOS-for-PC安装进硬盘（全盘安装）/
 ---
->注意！安装 FydeOS 到硬盘上将会抹掉硬盘上所有数据。该功能仍在测试阶段，我们无法对潜在的数据丢失以及安装中可能出现的各种问题负责或者提供及时的技术支持。请三思而后行！
+>注意！安装 FydeOS 到硬盘上将会抹掉硬盘上所有数据。该功能仍在测试阶段，我们无法对潜在的数据丢失以及安装中可能出现的各种问题负责或者提供及时的技术支持。请三思而后行！  
+此外，在最新版本的 FydeOS for PC 中，我们提供了图形化安装程序，你可以在「FydeOS 应用商店」安装使用。如果该程序无法工作，可尝试以下教程。
 
 ## 0. 通过 USB 盘等方式引导启动 FydeOS for PC
 
@@ -20,7 +21,7 @@ redirect_from:
 
 ## 2. 登录系统
 
-FydeOS 即将用命令行模式提示您输入用户名以及密码。在 FydeOS for PC 中，默认的用户名和密码都是 `chronos`，输入完成后将会进入开发者模式的命令行。
+FydeOS 即将用命令行模式提示您输入用户名以及密码。在 FydeOS for PC 中，默认的用户名是 `chronos`，该用户默认无密码，输入完成后将会进入开发者模式的命令行。
 
 ## 3. 确认目标磁盘
 
@@ -34,7 +35,7 @@ FydeOS 即将用命令行模式提示您输入用户名以及密码。在 FydeOS
 sudo /usr/sbin/chromeos-install --dst /dev/sda
 ```
 
-系统将提示输入管理员密码，请输入 `chronos`。安装脚本将最后确认您是否要继续并提示如果继续目标磁盘将要被清空。如果您确定，请输入 `Y` 并回车确认。
+安装脚本将最后确认您是否要继续并提示如果继续目标磁盘将要被清空。如果您确定，请输入 `Y` 并回车确认。
 
 ## 5. 等待脚本运行
 
