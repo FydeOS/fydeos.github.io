@@ -1,0 +1,20 @@
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  script:
+    - JEKYLL_ENV=production bundle exec jekyll build
+  tags:
+    - jekyll
+  artifacts:
+    paths:
+      - _site
+
+deploy:
+  stage: deploy
+  script:
+    - rsync -rtvp --delete-delay _site/ -e ssh $USER@$SERVER:$PATH_ON_SERVER
+  tags:
+    - jekyll
