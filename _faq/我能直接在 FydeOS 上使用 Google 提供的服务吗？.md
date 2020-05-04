@@ -1,6 +1,7 @@
 ---
-anchor: google-service-on-fydeos
+anchor: can-i-use-the-services-provided-by-google-directly-on-fydeos
 weight: 995
+lang: zh_CN
 ---
 **不能。**
 

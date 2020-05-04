@@ -19,14 +19,14 @@ Linux 支持处于测试版阶段，根据你的具体硬件配置，Linux（测
 
 使用`Ctrl`+`Alt`+`t`可以打开打开`crosh`，在其中输入`vmc start termina`以启动`Termina`虚拟机。
 
-```output
+```
 crosh> vmc start termina
 (termina) chronos@localhost ~ $
 ```
 
 `lxc list`列出已经安装的容器：
 
-```output
+```
 (termina) chronos@localhost ~ $ lxc list
 +---------+---------+-----------------------+------+------------+-----------+
 | NAME    | STATE   | IPV4                  | IPV6 | TYPE       | SNAPSHOTS |
@@ -37,7 +37,7 @@ crosh> vmc start termina
 
 使用`run_container.sh`命令可以下载并安装`Arch Linux`容器。由于 FydeOS 相对于 Chromium OS 对此命令进行了修改，编辑这个脚本撤销更改。由于 termina 是只读的，将脚本复制到临时目录`/tmp`：
 
-```output
+```
 cp /usr/bin/run_container.sh /tmp
 cd /tmp
 vim run_container.sh
@@ -67,7 +67,7 @@ lxc init "google:${FLAGS_lxd_image}" "${FLAGS_container_name}" || \
 
 运行以下命令，请确保用户名是**设置**应用里显示的用户名。你可以自行选择`container_name`指定的容器名,`lxd_image`指定的 Linux 镜像，或者`lxd_remote`指定的镜像源。
 
-```output
+```
 bash ./run_container.sh --container_name arch --user 你的用户名 --lxd_image archlinux/current --lxd_remote https://mirrors.tuna.tsinghua.edu.cn/lxc-images/
 ```
 
@@ -78,7 +78,7 @@ bash ./run_container.sh --container_name arch --user 你的用户名 --lxd_image
 
 ##### 执行容器的命令行：
 
-```output
+```
 (termina) chronos@localhost /tmp $ lxc exec arch -- bash
 [root@arch ~]#
 ```
@@ -129,7 +129,7 @@ visudo
 %wheel   ALL=(ALL:ALL) NOPASSWD: ALL
 ```
 
-##### 退出到 termina： 
+##### 退出到 termina：
 
 ```bash
 exit
@@ -141,7 +141,7 @@ exit
 
 运行`lxc console arch`，然后直接输入用户名：
 
-```output
+```
 (termina) chronos@localhost /tmp $ lxc console arch
 [<your-username>@arch ~]$
 ```

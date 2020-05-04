@@ -1,5 +1,7 @@
 ---
-anchor: adobe-flash-player
+anchor: does-fydeos-support-adobe-flash-player
+weight: 890
+lang: zh_CN
 ---
 在最新的 FydeOS for PC 版本中我们已经内嵌了 Adobe Flash Player，你可以直接使用。
 

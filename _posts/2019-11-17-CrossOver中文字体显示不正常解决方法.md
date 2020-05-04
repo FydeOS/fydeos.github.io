@@ -8,7 +8,7 @@ permalink: /recipes/crossover-chinese-font/
 ---
 
 如果觉得文字太长，可以直接跳到“进入正题”部分
-	
+
 ## 0. 前置知识
 
 CrossOver基于wine，因此许多wine的配置也能在CrossOver上实施。
@@ -81,9 +81,9 @@ wine里和字体相关的注册表项主要有
 
 ![](https://fydeos.com/wp-content/uploads/2019/11/regedit0.png)
 
-在我们修改之前，会有很多表项含的值为`Noto Sans CJK SC Regular`，这也是一种中文字体，我们需要将这些项的值替换成`Noto Sans CJK SC Regular`和`WenQuanYi Micro Hei`两个值，并增加一些字体如`宋体` `黑体`等的候选。
+在我们修改之前，会有很多表项含的值为`Noto Sans CJK SC Regular`，这也是一种中文字体，我们需要将这些项的值替换成`Noto Sans CJK SC Regular`和`WenQuanYi Micro Hei`两个值，并增加一些字体如`宋体`、`黑体`等的候选。
 
-- 打开`user.reg`，找到以`[Software\\Wine\\Fonts\\Replacements] `开头的块（在文件偏末尾的位置），删除该大块里面形如`"XXXXXXX"="Noto Sans CJK SC Regular"`的行，注意不要在中间留空行。
+- 打开`user.reg`，找到以`[Software\\Wine\\Fonts\\Replacements]`开头的块（在文件偏末尾的位置），删除该大块里面形如`"XXXXXXX"="Noto Sans CJK SC Regular"`的行，注意不要在中间留空行。
 
 - 在该块的末尾添加如下项
 

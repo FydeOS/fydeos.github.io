@@ -46,7 +46,11 @@ layout: default
 {% assign related_posts_size = related_posts | size %}
 {% if related_posts_size > 0 %}
   <div class="related">
-    <h4>这些或许也能帮助到你：</h4>
+    {% if site.active_lang == 'en' %}
+      <h4>These may also helps:</h4>
+    {% else %}
+      <h4>这些或许也能帮助到你：</h4>
+    {% endif %}
 
     {% include listings.html listings=site.related_posts %}
   </div>

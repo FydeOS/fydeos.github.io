@@ -1,4 +1,6 @@
 ---
-anchor: recover-usb
+anchor: after-i-experience-fydeos-how-do-i-restore-a-usb-drive
+weight: 950
+lang: zh_CN
 ---
 你可以使用磁盘管理工具（如 Disk Genius 等）删除 U 盘上的所有分区并新建一个分区，格式化成你想要的文件系统，请一定要谨慎操作。

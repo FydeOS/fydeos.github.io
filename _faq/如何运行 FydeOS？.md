@@ -1,6 +1,7 @@
 ---
 anchor: how-to-run-fydeos
 weight: 998
+lang: zh_CN
 ---
 目前，我们发布的 FydeOS 是针对 PC 和平板电脑为载体优化的版本，功能最为完整。欲体验完整功能版的 FydeOS，有如下三种方式：
 

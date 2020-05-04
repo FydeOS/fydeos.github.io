@@ -1,5 +1,7 @@
 ---
-anchor: virus
+anchor: does-fydeos-carry-viruses-trojan-or-any-tools-that-might-compromise-my-information-security
+weight: 880
+lang: zh_CN
 ---
 我们仅能保证从 FydeOS 官方途径发布的带有 FydeOS 标志的操作系统镜像是安全的、无害的、符合我们《隐私保护政策》以及其它在中华人民共和国互联网安全相关法律条款的。
 

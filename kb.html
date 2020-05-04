@@ -1,6 +1,5 @@
 ---
 ---
-
 <section class="categories">
   {% assign categories = site.categories | sort %}
   {% for category in categories %}
@@ -8,9 +7,13 @@
     {% assign posts = category[1] %}
     {% assign size = posts | size %}
     <section class="category">
-        <h3>
+      <h3>
+        {% if site.active_lang == "en" %}
+          <a href="{{ site.baseurl }}/en/category/{{ name | slugify }}/">{{ name }}</a>
+        {% else %}
           <a href="{{ site.baseurl }}/category/{{ name | slugify }}/">{{ name | replace: "-", " " }}</a>
-        </h3>
+        {% endif %}
+      </h3>
 
       <ul>
         {% assign tutorials = posts | sort: "title" %}

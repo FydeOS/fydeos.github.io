@@ -1,14 +1,13 @@
 ---
 ---
 
-<h1>FAQ</h1>
-
 <section class="faq">
   <div class="accordion" id="accordionFaq">
     <div class="card">
-    {% assign sorted = site.faq | sort: 'weight' | reverse %}
+    {% assign sorted = site.faq | where:"lang",site.active_lang | sort: 'weight' | reverse %}
+
     {% for item in sorted %}
-      {% assign question =  item.path | replace:'_faq/','' | replace:'.html','' | replace:'.md','' %}
+      {% assign question = item.path | replace:'_faq/','' | replace:'en/','' | replace:'.html','' | replace:'.md','' %}
       <div class="card-header" id="heading{{ forloop.index }}">
         <h5 class="mb-0">
           <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{{ forloop.index }}" aria-expanded="true" aria-controls="collapse{{ forloop.index }}" data-slug="{{ item.anchor }}">

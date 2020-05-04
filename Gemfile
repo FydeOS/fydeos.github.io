@@ -9,4 +9,5 @@ group :jekyll_plugins do
   gem 'jekyll-seo-tag', '2.4.0'
   gem 'jekyll-sitemap', '1.2.0'
   gem 'jekyll-redirect-from', '0.14.0'
+  gem "jekyll-polyglot", '1.3.1'
 end

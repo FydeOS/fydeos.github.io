@@ -1,6 +1,7 @@
 ---
-anchor: what-is-fydeos
+anchor: what-is-fydeos-what-is-the-significance-of-this-system
 weight: 999
+lang: zh_CN
 ---
 **FydeOS 是一款类似 Google Chrome OS 的浏览器 + 云驱动操作系统；FydeOS 能在大部分主流硬件上平稳运行，完美支持最新的网页应用标准、兼容安卓程序和 Linux 环境并且可以毫无障碍地在中国地区网络环境下使用。**
 

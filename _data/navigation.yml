@@ -1,6 +1,14 @@
-- name: 常见问题
-  link: /
-- name: 帮助文档
-  link: /help/
-- name: 知识库
-  link: /kb/
+zh_CN:
+  - name: 常见问题
+    link: /
+  - name: 帮助文档
+    link: /help/
+  - name: 知识库
+    link: /kb/
+en:
+  - name: FAQ
+    link: /
+  - name: Help
+    link: /help/
+  - name: Knowledge Base
+    link: /kb/

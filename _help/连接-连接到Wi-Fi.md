@@ -51,4 +51,3 @@ permalink: /help/connection/wifi/
 - 不需要密码的开放式网络
 - 使用 WEP、动态 WEP、WPA-PSK、WPA-Enterprise 或 WPA2-Enterprise 设置的安全网络
 - 标准网络：802.11 a/b/g/n 和 802.11ac
-

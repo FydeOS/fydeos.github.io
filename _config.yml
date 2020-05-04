@@ -19,6 +19,13 @@ social:
   links:
     - https://github.com/CloudCannon/base-jekyll-template
 
+# i18n
+# https://github.com/untra/polyglot
+languages: ["zh_CN", "en"]
+default_lang: "zh_CN"
+exclude_from_localizations: ["css", images", "js"]
+parallel_localization: true
+
 # -----
 # Build
 
@@ -32,6 +39,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-polyglot
 
 whitelist:
   - jekyll-redirect-from

@@ -4,7 +4,7 @@ layout: default
 
 <nav aria-label="breadcrumb" id="nav-breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item first"><a href="">帮助文档</a></li>
+    <li class="breadcrumb-item first"><a href=""></a></li>
     <li class="breadcrumb-item second active" aria-current="page"></li>
   </ol>
 </nav>
@@ -30,7 +30,7 @@ layout: default
         </div>
       {% endif %}
     {% endif %}
-    
+
     <div class="tutorial-main">
       {{ content }}
     </div>
@@ -55,23 +55,31 @@ layout: default
     //headings[i].appendChild(anchorLink);
   }
 
-  //fill breadcrumb
-  var arrUrlPath =  window.location.pathname.split('/');
-  arrUrlPath.pop();
-  var strFirstNodeURL = "/" + arrUrlPath[1] + "/#" + arrUrlPath[2];
+  // fill breadcrumb
+  var arrUrlPath = window.location.pathname.split('/');
+  var isEnglish = arrUrlPath.includes('en');
 
-  console.log(arrUrlPath);
+  // [i18n] hack the label of first node of breadcrumb
+  var firstNodeText = document.querySelector("ol.breadcrumb li.first a");
+  firstNodeText.innerText = '帮助文档';
+  if (isEnglish) {
+    firstNodeText.innerText = 'Help';
+  }
+
+  // [i18n] remove redundant 'en' in breadcrumb
+  arrUrlPath = arrUrlPath.filter(function (value) {
+    return value !== 'en';
+  });
+  arrUrlPath.pop();
+  var strFirstNodeURL = (isEnglish ? "/en/" : "/") + arrUrlPath[1] + "/#" + arrUrlPath[2];
 
   document.querySelector("ol.breadcrumb li.first a").setAttribute("href", strFirstNodeURL);
   var docTitle = document.querySelector("section.tutorial-content h1").innerText;
 
-  if (arrUrlPath.length <= 4)
-  {
+  if (arrUrlPath.length <= 4) {
     document.querySelector("ol.breadcrumb li.second").innerText = docTitle;
-  }
-  else if (arrUrlPath.length == 5)
-  {
-    var strSecondNodeURL = "/help/" + arrUrlPath[2] + "/" + arrUrlPath[3] + "/";
+  } else if (arrUrlPath.length == 5) {
+    var strSecondNodeURL = (isEnglish ? "/en/help/" : "/help/") + arrUrlPath[2] + "/" + arrUrlPath[3] + "/";
     var strSecondNodeText = "{{page.help_section | last}}"
     var objSecondNode = document.querySelector("ol.breadcrumb li.second");
     var objSecondLink = document.createElement("a");

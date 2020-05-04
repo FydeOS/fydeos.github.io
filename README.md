@@ -5,6 +5,9 @@
 
 
 ## Changelog
+#### 2020-05-11
+Translate Chinese site to English. English documents are located in `en` folder in `_faq`, `_help` and `_posts`.
+
 #### 2018-12-08
 Updated URL schemes for the Knowledge base section:
  - We are now using SEO friendly (and much shorter) human-readable plain English words as opposed to the longer article title which gets converted to [Punycode](https://en.wikipedia.org/wiki/Punycode).
@@ -27,27 +30,31 @@ $ git checkout git@github.com:FydeOS/fydeos.github.io.git
 3. cd into your working copy and prep for the Jekyll and its deps:
 ```bash
 $ cd your/dir/to/fydeos.github.io
-~/your/dir/to/fydeos.github.io $ gem install bundler jekyll
-~/your/dir/to/fydeos.github.io $ bundle exec jekyll serve --incremental
+$ gem install bundler jekyll
+$ bundle exec jekyll serve --incremental
 ```
 
 Now you should have **FydeOS FAQ & Knowledge base** showing up on your browser at [http://127.0.0.1:4000](http://127.0.0.1:4000)
-
 
 ### Creating new content
 1. FAQ items
  - Locate the directory named `_faq` in your working copy.
  - Within `_faq` you shall find numerous of `*.md` files, each file corresponds to one piece of FAQ item.
- - To create a new question, simply create a new `*.md` file within this directory, with the **name of your question** being the filename. e.g. `如何使用OTA升级我的FydeOS？.md`.
+ - To create a new question, simply create a new `*.md` file within this directory, with the **name of your question** being the filename. e.g. `如何使用 OTA 升级我的 FydeOS？.md`.
  - Edit this Markdown file you've just created, with content being the answer to the question. Note that the **first two lines of triple dashes** need to be preserved on each file, e.g.
 
 ```
 ---
-anchor: <anchor_for_each_question>
+anchor: <anchor_for_scrolling_to_the_question>
+weight: <weight_for_sorting>
+lang: <language>
 ---
 Your answer here
 ```
- - Save your file, you should be able to find your item on the FAQ page.
+Save your file, you should be able to find your item on the FAQ page. Note that:
+
+  - The anchor and weight are both preferable.
+  - The lang is required to filter for different translation. Use "zh_CN" or "en".
 
 2. Knowledge base item
  - Locate the directory named `_post` in your working copy.
@@ -65,6 +72,7 @@ type: Document
 permalink: /<category_name>/<SEO_friendly_title>/
 redirect_from:
   - /<早期中文category>/<早期中文标题>/
+lang: <language>
 ---
 Your tutorial content here
 ```
@@ -76,5 +84,4 @@ You shall create a pull request along with your additions to this repository, up
 
 
 ## Some other notes
- - The official language for contributing new contents is currently `zh_CN`, we will be making `EN` soon when we are ready to serve markets other than PR China.
  - This Jekyll template originates from `Base`, which was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.

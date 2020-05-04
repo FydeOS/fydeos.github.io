@@ -4,7 +4,7 @@
 <section class="help">
   <div class="accordion" id="accordionHelp">
     <div class="card">
-    {% assign help_sections = site.data.help_sections %}
+    {% assign help_sections = site.data.help_sections[site.active_lang] %}
     {% for help_section_item in help_sections %}
       <div class="card-header" id="heading{{ forloop.index }}">
         <h5 class="mb-0">

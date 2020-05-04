@@ -22,9 +22,9 @@ body {
 
 h1, h2, h3, h4, h5, h6,
 input, label, select, textarea, table, header, footer, .categories, .listing, .sidebar, .tutorial-share, .modalDialog, .faq ul, .tutorial-series ul {
-  -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-  -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-  -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+  -webkit-font-feature-settings: 'liga' 1, 'lnum' 1, 'kern' 1;
+  -moz-font-feature-settings: 'liga' 1, 'lnum' 1, 'kern' 1;
+  -o-font-feature-settings: 'liga' 1, 'lnum' 1, 'kern' 1;
   font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans", "Noto Sans CJK CS", Helvetica, Tahoma, Arial, "Hiragino Sans GB", 微软雅黑, Heiti, 黑体, sans-serif;
   text-rendering: geometricPrecision;
 }

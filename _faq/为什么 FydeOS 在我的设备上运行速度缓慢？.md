@@ -1,5 +1,7 @@
 ---
-anchor: slow-on-my-device
+anchor: why-is-fydeos-running-slowly-on-my-device
+weight: 920
+lang: zh_CN
 ---
 通过测试，我们发现通过移动存储设备引导启动的 FydeOS 将会受到较大的性能影响。若希望获得最佳使用体验，可以尝试将 FydeOS 装进硬盘。
 

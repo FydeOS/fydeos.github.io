@@ -6,7 +6,7 @@ type: Document
 permalink: /help/connection/error/
 ---
 
-如果你的 FydeOS 设备目前无法连接到互联网，因此无法完成设置过程。请查看以下问题排查提示；如果仍然遇到问题，请在我们的[中文社区](https://fydeos.com/community/)发贴以获取技术支持。
+如果你的 FydeOS 设备目前无法连接到互联网，因此无法完成设置过程。请查看以下问题排查提示；如果仍然遇到问题，请在我们的[中文社区](https://community.fydeos.com/)发贴以获取技术支持。
 
 - 请确保你连接的网络设置正确，并能够访问互联网。
 - 尝试将设备连接到其他网络。

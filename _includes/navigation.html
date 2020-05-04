@@ -1,12 +1,20 @@
 <a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
 <nav>
   <a class="editor-link btn" href="cloudcannon:collections/_data/navigation.yml" class="btn" style="padding: 5px;"><strong>&#9998;</strong> Edit navigation</a>
-  {% for link in site.data.navigation %}
-  {% assign class = "" %}
-
+  {% assign navigation = site.data.navigation[site.active_lang] %}
+  {% for link in navigation %}
+    {% assign class = "" %}
     {% if link.link == page.url %}
-      {% assign class = class | append: " active" %}
+      {% assign class = class | append: "active" %}
     {% endif %}
     <a href="{% include relative-src.html src=link.link %}" class="{{ class }}">{{ link.name }}</a>
   {% endfor %}
+
+  <div style="float:right;">
+    {% for lang in site.languages %}
+      <a {% if lang == site.active_lang %}style="font-weight:bold;"{% endif %} href="{% if lang == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ lang }}{{page.url}} {% endif %}">
+        {{ site.data.languages[lang]['label'] }}
+      </a>
+    {% endfor %}
+  </div>
 </nav>
