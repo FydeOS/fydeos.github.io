@@ -2,7 +2,7 @@
 date: 2018-07-16
 title: Flint OS for Firefly-RK3288 Installation guide
 categories:
-  - 早期版本
+  - previous-releases
 type: Document
 permalink: /previous-releases/firefly-rk3288/
 redirect_from:

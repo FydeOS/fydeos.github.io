@@ -2,7 +2,7 @@
 date: 2018-07-30
 title: How to reset (Powerwash) my FydeOS
 categories:
-  - 使用技巧
+  - tips
 type: Document
 permalink: /recipes/powerwash/
 redirect_from:

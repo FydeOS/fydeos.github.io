@@ -2,7 +2,7 @@
 date: 2018-12-12
 title: Replace Debian for Linux (beta) with Arch Linux
 categories:
-  - 使用技巧
+  - tips
   - crostini
 type: Document
 permalink: /recipes/install-arch-linux/

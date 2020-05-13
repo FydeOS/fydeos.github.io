@@ -2,7 +2,7 @@
 date: 2018-07-30
 title: Multi-boot configuration guide for FydeOS (early versions) and other operating systems
 categories:
-  - 使用技巧
+  - tips
 type: Document
 permalink: /recipes/legacy-dual-boot/
 redirect_from:

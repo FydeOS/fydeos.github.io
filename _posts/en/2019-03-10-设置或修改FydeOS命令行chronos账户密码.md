@@ -2,7 +2,7 @@
 date: 2019-03-10
 title: Set or modify the FydeOS command line chronos account password
 categories:
-  - 使用技巧
+  - tips
 type: Document
 permalink: /recipes/chronos-password/
 lang: en

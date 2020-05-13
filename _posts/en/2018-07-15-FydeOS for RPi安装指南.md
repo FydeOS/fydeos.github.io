@@ -2,7 +2,7 @@
 date: 2018-07-15
 title: Running Chromium OS for RPi for the first time
 categories:
-  - 起步走
+  - getting-started
 permalink: /getting-started/chromium-os-for-rpi/
 type: Document
 redirect_from:

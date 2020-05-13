@@ -2,7 +2,7 @@
 date: 2018-07-16
 title: Install FydeOS for PC into the hard disk (full disk installation)
 categories:
-  - 起步走
+  - getting-started
 type: Document
 permalink: /getting-started/install-fydeos-to-hdd/
 redirect_from:

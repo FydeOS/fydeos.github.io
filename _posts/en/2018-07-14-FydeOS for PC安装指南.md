@@ -2,7 +2,7 @@
 date: 2018-07-14
 title: Running FydeOS for PC for the first time
 categories:
-  - 起步走
+  - getting-started
 type: Document
 permalink: /getting-started/fydeos-for-pc/
 redirect_from:

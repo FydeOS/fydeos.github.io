@@ -2,7 +2,7 @@
 date: 2018-07-30
 title: Enable OTA upgrade in earlier FydeOS versions
 categories:
-  - 使用技巧
+  - tips
 type: Document
 permalink: /recipes/enable-ota-in-earlier-fydeos-releases/
 redirect_from:

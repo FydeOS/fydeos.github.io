@@ -2,7 +2,7 @@
 date: 2018-07-30
 title: Enter Shell in FydeOS
 categories:
-  - 起步走
+  - getting-started
 type: Document
 permalink: /getting-started/shell-access/
 redirect_from:

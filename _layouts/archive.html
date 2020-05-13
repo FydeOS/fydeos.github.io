@@ -3,8 +3,8 @@ layout: default
 ---
 {% assign currentCategory = page.category %}
 {% assign posts = site.categories[currentCategory] %}
-<h3>
-  {{currentCategory}}
+<h3 style="text-transform: capitalize;">
+  {{currentCategory | replace: "-", " "}}
   <span class="count">({{site.categories[currentCategory] | size}})</span>
 </h3>
 

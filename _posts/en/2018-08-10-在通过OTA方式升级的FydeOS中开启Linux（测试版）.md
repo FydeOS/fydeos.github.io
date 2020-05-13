@@ -2,7 +2,7 @@
 date: 2018-07-30
 title: Open Linux (beta) in FydeOS upgraded by OTA
 categories:
-  - 使用技巧
+  - tips
   - crostini
 type: Document
 permalink: /recipes/enable-crostini-after-ota-update/

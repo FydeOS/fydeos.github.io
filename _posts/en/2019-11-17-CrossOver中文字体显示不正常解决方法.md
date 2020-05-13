@@ -2,7 +2,7 @@
 date: 2019-11-17
 title: Solution to Chinese font display issue of CrossOver
 categories:
- - 使用技巧
+ - tips
 type: Document
 permalink: /recipes/crossover-chinese-font/
 lang: en

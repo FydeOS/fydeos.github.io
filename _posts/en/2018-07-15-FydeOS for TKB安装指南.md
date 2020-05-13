@@ -2,7 +2,7 @@
 date: 2018-07-15
 title: Running FydeOS for TKB for the first time
 categories:
-  - 起步走
+  - getting-started
 type: Document
 permalink: /getting-started/fydeos-for-tkb/
 redirect_from:
