@@ -1,16 +1,17 @@
 ---
 date: 2018-07-16
-title: 将 FydeOS for PC 安装进硬盘（全盘安装）
+title: 使用命令行将 FydeOS for PC 安装进硬盘（全盘安装）
 categories:
   - 起步走
 type: Document
-permalink: /getting-started/install-fydeos-to-hdd/
+permalink: /getting-started/install-fydeos-to-hdd-using-cli/
 redirect_from:
   - /使用技巧/将FydeOS-for-PC安装进硬盘（全盘安装）/
 ---
 
+>在最新版本的 FydeOS for PC 中，我们提供了图形化安装程序，你可以在「FydeOS 应用商店」安装使用。如果该程序无法工作，可尝试以下教程。
+
 >注意！安装 FydeOS 到硬盘上将会抹掉硬盘上所有数据。该功能仍在测试阶段，我们无法对潜在的数据丢失以及安装中可能出现的各种问题负责或者提供及时的技术支持。请三思而后行！
-此外，在最新版本的 FydeOS for PC 中，我们提供了图形化安装程序，你可以在「FydeOS 应用商店」安装使用。如果该程序无法工作，可尝试以下教程。
 
 ## 0. 通过 USB 盘等方式引导启动 FydeOS for PC
 

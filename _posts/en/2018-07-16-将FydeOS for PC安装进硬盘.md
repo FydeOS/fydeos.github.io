@@ -4,7 +4,7 @@ title: Install FydeOS for PC into the hard disk (full disk installation)
 categories:
   - getting-started
 type: Document
-permalink: /getting-started/install-fydeos-to-hdd/
+permalink: /getting-started/install-fydeos-to-hdd-using-cli/
 redirect_from:
   - /使用技巧/将FydeOS-for-PC安装进硬盘（全盘安装）/
 lang: en
