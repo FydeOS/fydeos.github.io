@@ -20,7 +20,7 @@
           {% for item in sorted_help_items %}
             {% if help_section_item.name == item.help_section %}
               <div class="help-item-row">
-                <a href="{{ site.baseurl }}{{ item.permalink }}">{{ item.title }}</a>
+                <a href="{{ site.url }}{{ item.permalink }}">{{ item.title }}</a>
               </div>
             {% endif %}
           {% endfor %}

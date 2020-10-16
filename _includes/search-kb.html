@@ -1,4 +1,4 @@
-<form action="{{ site.baseurl }}/search/" method="get">
+<form action="{{ site.url }}/search/" method="get">
   <input type="search" name="q" {% if include.add_id %}id="search-input"{% endif %} placeholder="{% if site.active_lang == 'en' %}What would you like to know?{% else %}想知道些什么呢？{% endif %}" autofocus>
   {% include search-icon.html %}
   <input type="submit" value="Search" style="display: none;">

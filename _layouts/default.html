@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
+  <link rel="stylesheet" href="{{ site.url }}/css/screen.css">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/favicon/apple-touch-icon.png?v=m2l4wEbdX3">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/favicon/favicon-32x32.png?v=m2l4wEbdX3">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/favicon/favicon-16x16.png?v=m2l4wEbdX3">
-  <link rel="manifest" href="{{ site.baseurl }}/favicon/site.webmanifest?v=m2l4wEbdX3">
-  <link rel="mask-icon" href="{{ site.baseurl }}/favicon/safari-pinned-tab.svg?v=m2l4wEbdX3" color="#5bbad5">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/favicon/apple-touch-icon.png?v=m2l4wEbdX3">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/favicon/favicon-32x32.png?v=m2l4wEbdX3">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/favicon/favicon-16x16.png?v=m2l4wEbdX3">
+  <link rel="manifest" href="{{ site.url }}/favicon/site.webmanifest?v=m2l4wEbdX3">
+  <link rel="mask-icon" href="{{ site.url }}/favicon/safari-pinned-tab.svg?v=m2l4wEbdX3" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff"> 
 
@@ -27,12 +27,14 @@
   gtag('config', 'UA-74826425-9');
   </script>
   {% endif %} {% seo %} {% feed_meta %}
-  <script src="https://faq.fydeos.com/js/vendors/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://faq.fydeos.com/js/vendors/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://faq.fydeos.com/js/vendors/bootstrap.min.js"></script>
+
+  <script src="{{ site.url }}/js/vendors/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="{{ site.url }}/js/vendors/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="{{ site.url }}/js/vendors/bootstrap.min.js"></script>
 </head>
 
 <body class="{{ page.body_class }}">
+
   <header>
     <div class="wrapper">
       <section class="top-bar">
