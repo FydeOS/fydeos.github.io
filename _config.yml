@@ -3,7 +3,6 @@
 
 title: FydeOS 文档中心
 url: "https://faq.fydeos.com/"
-#baseurl: "https://fydeos.com/"
 google_analytics_key: UA-74826425-9
 disqus_shortname:
 newsletter_action:
@@ -45,6 +44,10 @@ whitelist:
   - jekyll-redirect-from
 
 exclude:
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
   - Gemfile
   - Gemfile.lock
   - README.md
