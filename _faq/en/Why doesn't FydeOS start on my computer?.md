@@ -1,6 +1,6 @@
 ---
 anchor: why-doesnt-fydeos-start-on-my-computer
-weight: 997
+weight: 996
 lang: en
 ---
 **FydeOS for PC is still an earlier version. This means that FydeOS has not yet run perfectly on every computer in the world. And in use, you may also find that it still has technical problems, inadequacies and lack of functionality.**

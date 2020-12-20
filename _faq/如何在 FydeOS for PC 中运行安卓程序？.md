@@ -1,6 +1,6 @@
 ---
 anchor: how-to-run-android-program-in-fydeos-for-pc
-weight: 992
+weight: 989
 lang: zh_CN
 ---
 请注意：安卓子系统及安卓相关功能目前仅能适配 Intel 系列显卡。

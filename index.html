@@ -27,7 +27,7 @@
 </section>
 
 <script>
-  //init collapse state
+  //init collapse state according to URL #param
   var currentURL = window.location.href;
   if (currentURL.indexOf("#") > -1)
   {
@@ -35,23 +35,37 @@
     var toUnCollapse = document.querySelector("button[data-slug="+slug+"]");
     var toUnCollapseTarget = toUnCollapse.getAttribute('data-target');
     document.querySelector(toUnCollapseTarget).classList.add('show');
-
+  
     var sectionContainer = document.querySelector('section.content');
     window.scrollTo({
       left: 0,
       top: toUnCollapse.offsetTop + document.querySelector('header').offsetHeight,
       behavior: 'smooth'
     });
-    console.log("scrolled to");
-    console.log(toUnCollapse.offsetTop + document.querySelector('header').offsetHeight);
+    //console.log("scrolled to");
+    //console.log(toUnCollapse.offsetTop + document.querySelector('header').offsetHeight);
   }
 
-  //handles button click and append slug to URL
+  //handles button click and append/remove slug to URL
   var buttons = document.querySelectorAll("button.btn-link");
   buttons.forEach((button) => {
-    button.addEventListener("click", (e)=> {
-      var appendix = "#" + e.target.dataset.slug;
-      window.history.replaceState(null, null, appendix);
+    button.addEventListener("click", function(e) 
+    {
+      //wait for the animation to complete
+      setTimeout(() => {  
+        if( this.getAttribute("aria-expanded") == "true" )
+        {
+          var appendix = "#" + e.target.dataset.slug;
+          window.history.replaceState(null, null, appendix);
+        }
+        else
+        {
+          var loc = window.location;
+          window.history.pushState("", document.title, loc.pathname + loc.search);
+        }
+        
+      }, 500);
+
     });
   });
 </script>

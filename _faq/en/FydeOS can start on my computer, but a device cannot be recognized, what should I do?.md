@@ -1,6 +1,6 @@
 ---
 anchor: fydeos-can-start-on-my-computer-but-a-device-cannot-be-recognized-what-should-i-do
-weight: 996
+weight: 995
 lang: en
 ---
 FydeOS is committed to adapting and compatible with more hardware devices and external devices. Due to the particularity of the Chromium OS system structure, FydeOS is currently less compatible with hardware devices that are not mainstream, do not provide mainline Linux kernel drivers, and do not support mainstream Linux distributions.

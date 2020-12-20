@@ -24,7 +24,7 @@ jQuery(function() {
 
   function setSidebar() {
     var offset = 85,
-      bottom = $tutorial.offset().top + $tutorial.outerHeight() - $sidebar.outerHeight() - offset;
+        bottom = $tutorial.offset().top + $tutorial.outerHeight() - $sidebar.outerHeight() - offset;
     if (window.scrollY > bottom) {
       $sidebar.css("position", "absolute").css("top", $tutorial.outerHeight() - $sidebar.outerHeight());
     } else if (window.scrollY > $tutorial.offset().top) {
