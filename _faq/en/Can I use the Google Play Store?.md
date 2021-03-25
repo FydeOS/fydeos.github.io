@@ -1,6 +1,6 @@
 ---
 anchor: can-i-use-the-google-play-store
-weight: 995
+weight: 990
 lang: en
 ---
 The Google Play Store requires official Google authorization for distribution. The applications distributed through the Google Play Store usually rely on Google's service framework. Once the official authorization of Google is lost and the applications are installed into the operating system, these applications will often not work properly.

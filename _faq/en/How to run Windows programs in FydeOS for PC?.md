@@ -1,6 +1,6 @@
 ---
 anchor: how-to-run-windows-programs-in-fydeos-for-pc
-weight: 991
+weight: 988
 lang: en
 ---
 You will need CrossOver Chrome OS sold separately by [Codeweavers](https://www.codeweavers.com/), which can run some common Windows software on FydeOS.

@@ -1,6 +1,6 @@
 ---
 anchor: how-to-run-android-program-in-fydeos-for-pc
-weight: 992
+weight: 989
 lang: en
 ---
 Please note: Android subsystem and Android related functions can only be adapted to Intel series graphics cards.

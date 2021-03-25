@@ -1,6 +1,6 @@
 ---
 anchor: how-to-install-fydeos-to-the-hard-disk
-weight: 990
+weight: 991
 lang: zh_CN
 ---
 通过 USB 存储介质启动后，确认 FydeOS 在你的硬件设备上的兼容性足够满足需求。由于 U 盘介质的读写速度受限制，若要使用 FydeOS 的完整功能你需要将 FydeOS 安装到硬盘。
