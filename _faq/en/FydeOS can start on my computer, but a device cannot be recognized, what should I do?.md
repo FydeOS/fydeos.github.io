@@ -1,6 +1,6 @@
 ---
 anchor: fydeos-can-start-on-my-computer-but-a-device-cannot-be-recognized-what-should-i-do
-weight: 995
+weight: 996
 lang: en
 ---
 FydeOS is committed to adapting and compatible with more hardware devices and external devices. Due to the particularity of the Chromium OS system structure, FydeOS is currently less compatible with hardware devices that are not mainstream, do not provide mainline Linux kernel drivers, and do not support mainstream Linux distributions.
@@ -22,3 +22,5 @@ FydeOS is committed to adapting and compatible with more hardware devices and ex
  - Other unique external devices
 
 If you find that your "a device" cannot be recognized on FydeOS and the function is missing, you can try to run [Ubuntu Desktop](https://cn.ubuntu.com/desktop/) on your device to detect the device Compatibility with Linux systems. If it appears to be recognized under Ubuntu and can work normally but fails under FydeOS, welcome to our [Chinese Community](https://community.fydeos.com/) to post for help and provide detailed hardware information to help Our development team further improves hardware compatibility.
+
+In addition, FydeOS for PC will also have varying degrees of adaptation problems on x86 Chromebook devices, because FydeOS tried to add support for more PC devices when it was built, and for this reason, the upstream project's special optimization for Chromebooks was removed. For Chromebook devices that are still under support, we still recommend using Google Chrome OS for the best experience.
