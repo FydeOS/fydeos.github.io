@@ -17,9 +17,17 @@ There are 2 types of updates for FydeOS for PC:
 
 The following is a quick FAQ for the update situation aiming to explain the rationale behind.
 
+<br>
+
 #### Q: Why charge a fee?
 > A: It's pretty much the same reason as of why we launch the FydeOS subscription service for FydeOS for You releases.
-> We hope to bring you the best FydeOS experience; **This means that we are not interested in inserting advertisements, reselling your privacy, and other inelegant monetisation methods**. At the same time, we believe that "donation" is a less controllable and somewhat unfair income method. For the FydeOS update scenario, paying a one-time fee in exchange for value-added services is undoubtedly the most direct and fair way.
+> We hope to bring you the best FydeOS experience; **This means that we are not interested in inserting advertisements, reselling your privacy, and other inelegant monetisation methods**. At the same time, we believe that "donation" is a less controllable and somewhat unfair monetisation method. For the FydeOS update scenario, paying an one-time fee in exchange for the value-added services is undoubtedly the most direct and fair way.
+
+<br>
+
+
+#### Q: How much will I have to pay?
+> A: 1.59 USD.
 
 <br>
 
