@@ -1,6 +1,6 @@
 ---
 date: 2018-12-12
-title: 将 Linux（测试版）的Debian替换为Arch Linux
+title: 将 Linux（测试版）的 Debian 替换为 Arch Linux
 categories:
   - 使用技巧
   - crostini
