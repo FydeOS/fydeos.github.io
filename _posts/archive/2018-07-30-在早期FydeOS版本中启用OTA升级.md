@@ -22,7 +22,7 @@ __请注意，只有将 FydeOS 安装进硬盘后才能根据本教程进行 OTA
 
 ## 1 进入 Bash Shell
 
-参照 [这个教程](/getting-started/shell-access/) 进入 Bash Shell 环境并获得 root 权限。
+参照 [这个教程](/getting-started/shell-access/) 进入 bash 环境并获得 root 权限。
 
 
 ## 2. 运行命令

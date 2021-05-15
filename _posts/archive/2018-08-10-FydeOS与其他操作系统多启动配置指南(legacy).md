@@ -15,7 +15,7 @@ redirect_from:
 <br>
 
 
-> 注意：本教程假设你对 Linux 命令行操作并不陌生且具备最基本的操作技巧。若你觉得以下内容难以理解，请寻求身边朋友的帮助或者到 [FydeOS 中文社区](https://fydeos.com/community) 寻求帮助。
+> 注意：本教程假设你对 Linux 命令行操作并不陌生且具备最基本的操作技巧。若你觉得以下内容难以理解，请寻求身边朋友的帮助或者到 [FydeOS 中文社区](https://community.fydeos.com) 寻求帮助。
 
 
 ## 0. 准备工作
@@ -59,13 +59,13 @@ redirect_from:
 通过 [该教程](https://fydeos.com/instructions-pc/) 将 FydeOS 进移动存储设备并用其引导启动系统。确保 FydeOS 在目标设备上运行状况良好，无明显硬件兼容性问题。
 
 
-## 4. 进入 TTY Shell
+## 4. 进入 TTY 命令行
 
 **如果已经创建 FydeOS 本地账号并已登录系统，请退出当前用户的登录。**
 
-同时按下键盘上 `Ctrl+Alt+F2` 键（在某些电脑上，比如 Apple Mac 上需要按下 `Fn+Ctrl+Alt+F2`，这时系统将会自动切换到 tty 命令行模式。若需要，可按 `Ctrl+Alt+F1`（或 `Fn+Ctrl+Alt+F1`）退回到图形界面模式。
+同时按下键盘上 `Ctrl+Alt+F2` 键（在某些电脑上，比如 Apple Mac 上需要按下 `Fn+Ctrl+Alt+F2`，这时系统将会自动切换到 TTY 命令行模式。若需要，可按 `Ctrl+Alt+F1`（或 `Fn+Ctrl+Alt+F1`）退回到图形界面模式。
 
-请勿使用浏览器内的 Crosh Shell 执行以下操作，务必在登出用户的状态下切进 TTY Shell 以避免不可预见的磁盘读写错误。
+请勿使用浏览器内的 crosh 执行以下操作，务必在登出用户的状态下切进 TTY 命令行以避免不可预见的磁盘读写错误。
 
 
 ## 5. 运行命令
@@ -110,7 +110,7 @@ sudo dual-boot-install -d /dev/sda
 
 <br>
 #### 卸载硬盘内的 FydeOS 系统
-如果您不再希望在硬盘中保留 FydeOS 系统，请您自行备份系统中重要的个人文件，并在 TTY Shell 中，运行以下命令以卸载 FydeOS：
+如果您不再希望在硬盘中保留 FydeOS 系统，请您自行备份系统中重要的个人文件，并在 TTY 命令行中，运行以下命令以卸载 FydeOS：
 ```bash
 sudo dual-boot-remove -d /dev/sda
 ```
