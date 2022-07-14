@@ -5,7 +5,7 @@ lang: zh_CN
 ---
 目前我们有如下三种主要的 FydeOS 发行版，根据不同的场景，你可以选择最适合你的发行版下载体验：
 
- - **FydeOS for PC** 是最普适的 FydeOS 发行版，意在适配绝大多数带有 Intel CPU 及 Intel 集成显卡的的 PC 设备。首次启动需要使用 USB 存储介质引导，具体的安装指南可以查看[以下页面](https://fydeos.com/instructions-pc/)。如果你拥有一台 2010 年之后出厂的 携带有 Intel 集成显卡的 PC 设备，很大概率上 FydeOS for PC 是能够兼容的。
+ - **FydeOS for PC** 是最普适的 FydeOS 发行版，意在适配绝大多数带有 Intel CPU 及 Intel 集成显卡的的 PC 设备。首次启动需要使用 USB 存储介质引导，具体的安装指南可以查看[以下页面](https://fydeos.com/docs/knowledge-base/getting-started/fydeos-for-pc)。如果你拥有一台 2010 年之后出厂的 携带有 Intel 集成显卡的 PC 设备，很大概率上 FydeOS for PC 是能够兼容的。
 
  - **FydeOS for You** 是我们为部分指定设备专门定制的版本，具有更好的适配性，并且支持一些根据具体设备功能。如果你恰好拥有已适配的这些设备，那么推荐你使用相应的版本。安装方式与 FydeOS for PC 基本无异。FydeOS for You 支持的设备列表将不定期更新，详情请查看[下载](https://fydeos.com/download/)页面。
 
